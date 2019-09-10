@@ -13,17 +13,17 @@ def uuidGen(uuidVersion=4, arg="Charfun"):
     else:
         if uuidVersion in [4, 1]:
             if arg is not "Charfun" and isinstance(arg, int):
-                num = arg
+                num = 1
                 if arg < 1 or arg > 1000:
                     print(
                         "If uuidVersion is 4 or 1,the value must in the range of 1-1000 and the type must be Integer.")
                     return False
             else:
-                num = 1
+                num = arg
 
             http = urllib3.PoolManager()
             r = http.request(
-                'GET', "https://www.charfun.com/api/uuid%s/%s" % (uuidVersion, arg))
+                'GET', "https://www.charfun.com/api/uuid%s/%s" % (uuidVersion, num))
             rawData = r.data.decode()
             data = json.loads(rawData)
         elif uuidVersion in [5, 3]:
