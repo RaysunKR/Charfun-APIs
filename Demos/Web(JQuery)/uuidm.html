@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Charfun-Generating your UUID online more gracefully.</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./uuidm">Generate multiple UUIDs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title" id="shower">Please click Generate.</h2>
+                <div class="justify-content-center">
+                    <form>
+                        <div class="form-group row">
+                            <label for="num" class="col-sm-2 col-form-label form-control-sm">How many:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control form-control-sm" id="num"
+                                    placeholder="(Number 1-10)More UUIDs can be generated through the developer API.">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="btn btn-danger btn-sm" id="uuid4">Generate UUID v4</button>
+                <button type="button" class="btn btn-primary btn-sm" id="uuid1">Generate UUID v1</button>
+                <button type="button" class="btn btn-light btn-sm" id="copy" data-clipboard-text="Please click Generate.">Copy</button>
+            </div>
+        </div>
+        <div class="alert alert-light" role="alert">
+            <h4 class="alert-heading">Tips:</h4>
+            <p>UUIDv4 is the most commonly used version.</p>
+            <p>For the difference between different versions of UUID, please see <a target="__blank"
+                    href="https://en.wikipedia.org/wiki/Universally_unique_identifier">here.</a></p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#uuid4").click(function () {
+                $('#copy').text("Copy");
+                num = $("#num").val();
+                num = Number(num);
+                if (num >= 1 && num <= 10) {
+                    $("#num").removeClass("is-invalid");
+                    $.get("./api/uuid4/" + num, function (data, status) {
+                        uuid = data["data"];
+                        content = "";
+                        copytext = ""
+                        for (line in uuid) {
+                            content += "<h2>" + uuid[line] + "</h2>";
+                            copytext += uuid[line] + "\n";
+                        }
+                        $("#shower").html(content);
+                        $("#copy").attr("data-clipboard-text", copytext);
+                    })
+                } else {
+                    $("#num").addClass("is-invalid");
+                    $("#shower").html("<h2>Please note the range of values!!!</h2>");
+                    $("#num").val("");
+                }
+            });
+
+            $("#uuid1").click(function () {
+                $('#copy').text("Copy");
+                num = $("#num").val();
+                num = Number(num);
+                if (num >= 1 && num <= 10) {
+                    $("#num").removeClass("is-invalid");
+                    $.get("./api/uuid1/" + num, function (data, status) {
+                        uuid = data["data"];
+                        content = "";
+                        copytext = ""
+                        for (line in uuid) {
+                            content += "<h2>" + uuid[line] + "</h2>";
+                            copytext += uuid[line] + "\n";
+                        }
+                        $("#shower").html(content);
+                        $("#copy").attr("data-clipboard-text", copytext);
+                    })
+                } else {
+                    $("#num").addClass("is-invalid");
+                    $("#shower").html("<h2>Please note the range of values!!!</h2>");
+                    $("#num").val("");
+                }
+            });
+
+            $("#copy").click(function () {
+                var clipboard = new ClipboardJS('#copy');
+                clipboard.on("success", function () {
+                    $('#copy').text("Copied!");
+                    setTimeout(function () {
+                        $('#copy').text("Copy");
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
