@@ -32,6 +32,8 @@ function uuidGen($uuidVersion = 4, $arg = "Charfun")
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL, "https://www.charfun.com/api/uuid" . $uuidVersion . "/" . $arg);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, '0');
+                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, '0');
                 $output = curl_exec($ch);
                 $rawData = $output;
                 curl_close($ch);
