@@ -63,7 +63,7 @@
         $(document).ready(function () {
             $("#uuid4").click(function () {
                 $('#copy').text("Copy");
-                $.get("./api/uuid4/1", function (data, status) {
+                $.get("https://www.charfun.com/api/uuid4/1", function (data, status) {
                     uuid = data["data"][0];
                     $("h2").text(uuid);
                     $("#copy").attr("data-clipboard-text", uuid);
@@ -73,7 +73,7 @@
             $("#uuid5").click(function () {
                 $('#copy').text("Copy");
                 name = $("#something").val();
-                url = "./api/uuid5/";
+                url = "https://www.charfun.com/api/uuid5/";
                 url += name;
                 $.get(url, function (data, status) {
                     uuid = data["data"][0];
@@ -85,7 +85,7 @@
             $("#uuid3").click(function () {
                 $('#copy').text("Copy");
                 name = $("#something").val();
-                url = "./api/uuid3/";
+                url = "https://www.charfun.com/api/uuid3/";
                 url += name;
                 $.get(url, function (data, status) {
                     uuid = data["data"][0];
@@ -96,7 +96,7 @@
 
             $("#uuid1").click(function () {
                 $('#copy').text("Copy");
-                $.get("./api/uuid1/1", function (data, status) {
+                $.get("https://www.charfun.com/api/uuid1/1", function (data, status) {
                     uuid = data["data"][0];
                     $("h2").text(uuid);
                     $("#copy").attr("data-clipboard-text", uuid);

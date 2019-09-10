@@ -60,7 +60,7 @@
             $("#gen").click(function () {
                 $('#copy').text("Copy");
                 longurl = $("#something").val();
-                $.post("./api/shorturl", {
+                $.post("https://www.charfun.com/api/shorturl", {
                     "longurl": longurl
                 }, function (data) {
                     shorturl = data["shorturl"];

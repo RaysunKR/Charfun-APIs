@@ -65,7 +65,7 @@
                 num = Number(num);
                 if (num >= 1 && num <= 10) {
                     $("#num").removeClass("is-invalid");
-                    $.get("./api/uuid4/" + num, function (data, status) {
+                    $.get("https://www.charfun.com/api/uuid4/" + num, function (data, status) {
                         uuid = data["data"];
                         content = "";
                         copytext = ""
@@ -89,7 +89,7 @@
                 num = Number(num);
                 if (num >= 1 && num <= 10) {
                     $("#num").removeClass("is-invalid");
-                    $.get("./api/uuid1/" + num, function (data, status) {
+                    $.get("https://www.charfun.com/api/uuid1/" + num, function (data, status) {
                         uuid = data["data"];
                         content = "";
                         copytext = ""
