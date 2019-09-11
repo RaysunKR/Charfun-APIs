@@ -51,7 +51,7 @@
 
 #### 例：
 
-リクエスト：** https://www.charfun.com/api/uuid3/helloworld  
+**リクエスト：** https://www.charfun.com/api/uuid3/helloworld  
 
 **応答：**
 
