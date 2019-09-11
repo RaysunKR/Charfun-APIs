@@ -6,7 +6,7 @@ Multi-language documentation (English, Chinese, Japanese) and usage examples of 
 
 Also welcome to use the WebUI to use these APIs:https://www.charfun.com
 
- 
+---
 
 这些API可以帮助开发者在线生成UUID、二维码和短网址，所有这些API都是免费无限使用的。
 
@@ -14,7 +14,7 @@ Also welcome to use the WebUI to use these APIs:https://www.charfun.com
 
 也欢迎通过Charfun网站来使用这些API：https://www.charfun.com
 
- 
+---
 
 這些API可以幫助開發者在綫上生成UUID、QRCode和ShortURL，所有API都可免費及不受限使用。
 
@@ -22,7 +22,7 @@ Also welcome to use the WebUI to use these APIs:https://www.charfun.com
 
 也歡迎透過Charfun網站使用這些API：https://www.charfun.com
 
- 
+---
 
 プログラマーたちがこのAPIを通じて、UUIDとQRCodeとShortURLを生成いただけます。全部のAPIが制限なしで利用いただけます。
 
