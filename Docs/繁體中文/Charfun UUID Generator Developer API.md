@@ -10,7 +10,7 @@
 
 #### 範例
 
-**Request：**https://www.charfun.com/api/uuid4/5  
+**Request：** https://www.charfun.com/api/uuid4/5  
 
 **Response：**
 
@@ -33,7 +33,7 @@
 
 #### 範例
 
-**Request：**https://www.charfun.com/api/uuid5/helloworld  
+**Request：** https://www.charfun.com/api/uuid5/helloworld  
 
 **Response：**
 
@@ -51,7 +51,7 @@
 
 #### 範例
 
-**Request：**https://www.charfun.com/api/uuid3/helloworld  
+**Request：** https://www.charfun.com/api/uuid3/helloworld  
 
 **Response：**
 
@@ -68,7 +68,7 @@
 
 #### 範例
 
-**Request：**https://www.charfun.com/api/uuid1/5  
+**Request：** https://www.charfun.com/api/uuid1/5  
 
 **Response：**
 
