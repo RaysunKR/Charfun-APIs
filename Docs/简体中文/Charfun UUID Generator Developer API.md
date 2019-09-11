@@ -10,7 +10,8 @@
 
 #### 例子
 
-**请求：**https://www.charfun.com/api/uuid4/5
+**请求：** https://www.charfun.com/api/uuid4/5  
+
 **响应：**
 
 ```javascript
@@ -32,7 +33,8 @@
 
 #### 例子
 
-**请求：**https://www.charfun.com/api/uuid5/helloworld
+**请求：** https://www.charfun.com/api/uuid5/helloworld  
+
 **响应：**
 
 ```javascript
@@ -49,7 +51,8 @@
 
 #### 例子
 
-**请求：**https://www.charfun.com/api/uuid3/helloworld
+**请求：** https://www.charfun.com/api/uuid3/helloworld  
+
 **响应：**
 
 ```javascript
@@ -65,7 +68,8 @@
 
 #### 例子
 
-**请求：**https://www.charfun.com/api/uuid1/5
+**请求：** https://www.charfun.com/api/uuid1/5  
+
 **响应：**
 
 ```javascript

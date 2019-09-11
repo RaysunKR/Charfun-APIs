@@ -10,7 +10,8 @@ This API is currently available for unlimited use. The usage limit will be set l
 
 #### Example
 
-**Request:**https://www.charfun.com/api/uuid4/5
+**Request:** https://www.charfun.com/api/uuid4/5  
+
 **Response：**
 ```javascript
 {"info":"OK",
@@ -31,7 +32,8 @@ This API is currently available for unlimited use. The usage limit will be set l
 
 #### Example
 
-**Request:**https://www.charfun.com/api/uuid5/helloworld
+**Request:** https://www.charfun.com/api/uuid5/helloworld  
+
 **Response：**
 
 ```javascript
@@ -48,7 +50,8 @@ This API is currently available for unlimited use. The usage limit will be set l
 
 #### Example
 
-**Request:**https://www.charfun.com/api/uuid3/helloworld
+**Request:** https://www.charfun.com/api/uuid3/helloworld  
+
 **Response：**
 
 ```javascript
@@ -64,7 +67,8 @@ This API is currently available for unlimited use. The usage limit will be set l
 
 #### Example
 
-**Request:**https://www.charfun.com/api/uuid1/5
+**Request:** https://www.charfun.com/api/uuid1/5  
+
 **Response：**
 
 ```javascript
