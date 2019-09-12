@@ -4,9 +4,9 @@
 
 ### ShortURLを生成する
 
-| **リクエスト方法** | **リクエスト形式**                   | **備考**                        | **Argument**                        |
-| :----------------- | ------------------------------------ | ------------------------------- | ----------------------------------- |
-| POST               | https://www.charfun.com/api/shorturl | Request body的格式是 form-data. | Key:longurl  Value:{Your long url.} |
+| **リクエスト方法** | **リクエスト形式**                   | **備考**                                | **Argument**                        |
+| :----------------- | ------------------------------------ | --------------------------------------- | ----------------------------------- |
+| POST               | https://www.charfun.com/api/shorturl | Request bodyのフォーマットは form-data. | Key:longurl  Value:{Your long url.} |
 
 #### 例
 
