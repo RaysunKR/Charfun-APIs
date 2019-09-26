@@ -2,6 +2,8 @@
 
 This API is currently available for unlimited use. The usage limit will be set later depending on the situation.
 
+Attention: Any contents could just be saved by 15 days.
+
 ### Get Allowed Email
 
 Before you create a chanel , you must get your AKey and BKey by Email , we do not allow any email address to recieve the information. The API could tell you the email service providers that we allow.
