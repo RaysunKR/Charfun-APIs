@@ -187,17 +187,17 @@ If both UUID and title are used, the API would fetch the content by UUID.
     "info": "OK",
     "contents": [
         {
-            "uuid": "220c469a-052e-518f-a1a1-e752672109ec",
+            "uuid": "xxxxxxx-052e-518f-a1a1-xxxxxxxxxxxx",
             "title": "yeyrereqw324324ererwerewfsfaFrett",
             "content": "fddsfsarewrrfdfsdafasd"
         },
         {
-            "uuid": "38bd4d20-324d-5f09-837a-3b1b467f7f9a",
+            "uuid": "xxxxxxx-324d-5f09-837a-xxxxxxxxxxxx",
             "title": "ererwerewfsfaF",
             "content": "ssdadasdsaddsadfsfddsfdsfsdasfdsfsdfdfsdafasd"
         },
         {
-            "uuid": "4b0aecb0-c7ab-5318-b386-bb4916637909",
+            "uuid": "xxxxxxx-c7ab-5318-b386-xxxxxxxxxxxx",
             "title": "sewrwereffyfrasasreqrqrrwerewfsfaFrettsdfsddgfdgasf",
             "content": "fddsfsarewrrsffdfsdafasdsdfaswerwetrwtwrewrewr"
         }
@@ -229,7 +229,7 @@ The API could help you delete content from your channel.
 | **Key** | **Value**                                                    |
 | ------- | ------------------------------------------------------------ |
 | token   | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-| uuid    | 529f524d-296e-559f-94ec-df9210cd6f6b                         |
+| uuid    | xxxxxxd-296e-559f-94ec-xxxxxxxxxx                            |
 
 **Response:** 
 
@@ -259,7 +259,7 @@ The API could help you Edit content in your channel.
 | **Key** | **Value**                                                    |
 | ------- | ------------------------------------------------------------ |
 | token   | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-| uuid    | 529f524d-296e-559f-94ec-df9210cd6f6b                         |
+| uuid    | xxxxxxxd-2xxe-559f-94ec-xxxxxxxxxx                           |
 
 **Response:** 
 
